@@ -2,7 +2,7 @@
 
 Bitcoin Simulation is a python program that simulates a cryptocurrency blockchain and gives the user complete control over the processed transactions. The user also has access to parameters such as the number of participants, how much money they have, and has access to view hash codes, private keys and public keys.
 
-#Comprehensive Examination
+## Comprehensive Examination
 
 In regards to the comprehensive examination, I nearly achieved everything I wanted to do with this program. The goal was to make a sort of cryptocurrency that would work. However, I was not able to implement all of the aspects of a cryptocurrency because of my lack of knowledge in the field of cryptography. I was not able to implement the digital signature. This feature makes it so that each person can digitally sign transactions that they put through, but this is actually very complicated to do.
 
@@ -10,7 +10,7 @@ In addition, instead of having a form of cryptocurrency where each participant h
 
 The idea of bitcoin is that everyone is protected from hacking because in order for a blockchain to be hacked, someone would have to mine more bitcoins than everyone else combined on the network. This would require a tremendous amount of computing power, however that would be possible in this simulation with low numbers of participants.
 
-#Sources
+## Sources
 
 The sources I used to make this simulation are all part of the attached microsoft word file. In addition, my notes of how bitcoin works are all there, I would primarily recommend reading the three paragraphs with highlighted headers. The rest of the file is mostly notes to myself when I was making this program.
 
@@ -23,38 +23,38 @@ This program can then be opened in the idle, and the code can be launched by goi
 
 Phase 1 - Parameters:
 
-# add a participant and an associated amount of money (do not include brackets, only commas). The name must also be unique and can only include numbers and letters.
+### add a participant and an associated amount of money (do not include brackets, only commas). The name must also be unique and can only include numbers and letters.
 add [name of participant (no spaces)], [amount of money]
 
-# delete a participant
+### delete a participant
 delete [name of participant]
 
-# print list of participants and amount of money
+### print list of participants and amount of money
 list
 
-# continue to next phase
+### continue to next phase
 continue
 
 Phase 2 - Simulation:
 
-#View the hash of current block to be mined, only works once there is at least one pending transaction
+### View the hash of current block to be mined, only works once there is at least one pending transaction
 viewcurrenthash
 
-#Random person guesses the current hash
+### Random person guesses the current hash
 guess
 
-#View a previous block's transactions (the first block has block index 0, and so on)
+### View a previous block's transactions (the first block has block index 0, and so on)
 viewblocktransactions [block index]
 
-#Person X pays Person Y a certain amount of money
+### Person X pays Person Y a certain amount of money
 This command only works once there are pending transactions
 pay [name of participant paying money], [name of participant receiving money], [amount of money]
 
-#Print the pending transactions (transactions that are not yet in a block)
+### Print the pending transactions (transactions that are not yet in a block)
 pendingtransactions
 
-#Print the private key of a participant
+### Print the private key of a participant
 privatekey [name of participant]
 
-#Print the public key of a participant
+### Print the public key of a participant
 publickey [name of participant]
